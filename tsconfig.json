@@ -1,6 +1,5 @@
 {
   "files": [
-    "index.d.ts",
-    "typings/main.d.ts"
+    "index.d.ts"
   ]
 }
