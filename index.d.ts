@@ -19,7 +19,7 @@ interface DelegatesWrapper {
 }
 
 interface AbstractBrowser {
-    new (options : Options) : AbstractBrowser;
+    new (options? : Options) : AbstractBrowser;
     extend(child : any, options : Options) : AbstractBrowser;
     getDocument() : Document;
     getWindow() : Window;
@@ -37,13 +37,13 @@ interface Options {
 }
 
 interface MockBrowser extends AbstractBrowser {
-    new (options) : MockBrowser;
+    new (options? : any) : MockBrowser;
     createDocument() : Document;
     createWindow() : Window;
 }
 
 interface MockStorage {
-    new (data : any) : MockStorage;
+    new (data? : any) : MockStorage;
     key(index : number) : any;
     setItem(key : string, value : any) : void;
     getItem(key : string) : any;
