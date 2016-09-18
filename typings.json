@@ -1,4 +1,5 @@
 {
   "name": "mock-browser",
-  "main": "index.d.ts"
+  "main": "index.d.ts",
+  "global": true
 }
