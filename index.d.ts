@@ -1,13 +1,5 @@
-declare var mockBrowser : MockBrowserWrapper;
-
-declare module 'mock-browser' {
-    export = mockBrowser;
-}
-
-interface MockBrowserWrapper {
-    delegates : DelegatesWrapper;
-    mocks : MocksWrapper;
-}
+export var mocks : MocksWrapper;
+export var delegates : DelegatesWrapper;
 
 interface MocksWrapper {
     MockBrowser : MockBrowser;
